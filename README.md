@@ -14,3 +14,10 @@ Usable in SwiftUI context and outputs an image in one of these formats: `UIImage
 ## How to Use
 
 Create an instance of `MetalSnapshotTaker` either in your `MTKView` or in `UIViewRepresentable` that holds it. Call the `update` method (this can be done from Coordinator's init) passing an instance of MTLDevice, and references to `draw`, and `mtkView` methods of you MTKView subclass. The last one only needed if you use it to modify rendering, in which case the `setCurrentSize` shoud be called from it.
+
+## Example
+
+An example Swift Playgrounds app: [MetalSnapshotTaker example](https://github.com/gadirom/MetalSnapshotTaker/tree/main/MetalSnapshotTaker%20example.swiftpm)
+
+    <img src="https://github.com/gadirom/MetalSnapshotTaker/blob/main/SnapshotTaker.gif" alt="example" />
+
