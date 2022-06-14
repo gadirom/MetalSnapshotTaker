@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "MetalSnapshotTaker",
+    platforms: [.iOS(.v15), .macOS(.v10_10)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -21,8 +22,5 @@ let package = Package(
         .target(
             name: "MetalSnapshotTaker",
             dependencies: []),
-        .testTarget(
-            name: "MetalSnapshotTakerTests",
-            dependencies: ["MetalSnapshotTaker"]),
     ]
 )
