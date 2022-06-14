@@ -1,6 +1,7 @@
 import SwiftUI
 import MetalKit
 
+/// Class that allows taking snapshots of any size from MTKView
 public class MetalSnapshotTaker{
     
     private var snapshotSize: CGSize{
@@ -19,6 +20,11 @@ public class MetalSnapshotTaker{
     public init(size: CGSize){
         snapshotSize = size
     }
+    /// Call this method before taking snapshots
+    /// - Parameters:
+    ///   - device: device from `MTKView`
+    ///   - drawIn: reference to `draw` method of `MTKView`
+    ///   - onSizeChange: optional reference to `mtkView` method if you use this method to change rendering behaviour
     public func setup(device: MTLDevice,
                       drawIn: @escaping ((MTKView)->()),
                       onSizeChange: ((MTKView, CGSize)->())? = nil){
@@ -31,6 +37,8 @@ public class MetalSnapshotTaker{
             }
         }
     }
+    /// Call this method from `mtkView` method of MTKView to "remember" current size of `MTKView`
+    /// - Parameter size: pass `size` parameter from `mtkView` method
     public func setCurrentSize(_ size: CGSize) {
         if !takingSnapshot{
             currentSize = size
