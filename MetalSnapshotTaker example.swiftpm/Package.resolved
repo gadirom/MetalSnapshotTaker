@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "metalsnapshottaker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gadirom/MetalSnapshotTaker",
+      "state" : {
+        "revision" : "af2cd95cfb143fbd99540ca1ada748413c13df1d",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
