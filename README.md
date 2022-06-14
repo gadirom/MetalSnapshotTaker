@@ -19,5 +19,6 @@ Create an instance of `MetalSnapshotTaker` either in your `MTKView` or in `UIVie
 
 An example Swift Playgrounds app: [MetalSnapshotTaker example](https://github.com/gadirom/MetalSnapshotTaker/tree/main/MetalSnapshotTaker%20example.swiftpm)
 
+<p align="center">
     <img src="https://github.com/gadirom/MetalSnapshotTaker/blob/main/SnapshotTaker.gif" alt="example" />
-
+</p>
