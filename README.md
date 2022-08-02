@@ -8,7 +8,7 @@
     
 </p>
 
-This package contains `MetalSnapshotTaker` class that allows taking snapshots of arbitrary sizes from an `MTKView` subclass with minimal alterations in it's code. 
+This package contains `MetalSnapshotTaker` class that allows exporting of images of arbitrary sizes from the output of `MTKView` subclass with minimal alterations in it's code. 
 Usable in SwiftUI context and outputs an image in one of these formats: `UIImage`, `CGImage`, `Image`.
 
 ## How to Use
